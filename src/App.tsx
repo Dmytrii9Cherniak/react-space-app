@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.scss';
+import MainPage from './components/main/MainPage';
 
 function App() {
   return (
-    <div>
-
+    <div className="fullAppBlock">
+        <MainPage/>
     </div>
   );
 }

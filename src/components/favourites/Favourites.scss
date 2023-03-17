@@ -1,0 +1,35 @@
+@import 'src/index.scss';
+
+.mainFavouritesBlock {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  .headerImageBlock {
+    width: 100%;
+    max-width: 100%;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .favouritesContent {
+      position: absolute;
+      top: 220px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      h4 {
+        width: 513px;
+        height: 58px;
+        @include setFontStyles('Syne', normal, 800, 48px, 58px);
+        text-align: center;
+        text-transform: uppercase;
+        color: $basicWhiteColor;
+      }
+    }
+  }
+
+}
