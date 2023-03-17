@@ -22,14 +22,20 @@
     display: flex;
     column-gap: 32px;
 
-    div a {
+    div {
       text-decoration: none;
       @include setFontStyles('Lato', normal, 500, 16px, 19px);
       color: $basicWhiteColor;
 
+      a {
+        text-decoration: none;
+        color: $basicWhiteColor;
+      }
+
       &:hover {
         text-decoration: underline;
         text-underline-offset: 4px;
+        cursor: pointer;
       }
     }
   }
@@ -48,6 +54,16 @@
       &:hover {
         cursor: pointer;
       }
+
+      .pink {
+        border: none;
+        background-color: #DD377D;
+
+        & svg {
+          fill: white;
+          color: $basicWhiteColor;
+        }
+      }
     }
 
     .signInButton {
@@ -57,6 +73,15 @@
       background: #D3EAFF;
       border: none;
       cursor: pointer;
+    }
+
+    .pink {
+      border: none;
+      background-color: #DD377D;
+
+      svg {
+        filter: $basicWhiteColor;
+      }
     }
   }
 
