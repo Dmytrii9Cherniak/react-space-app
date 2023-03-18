@@ -1,0 +1,24 @@
+@import 'src/index.scss';
+
+.favouritesButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 53px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .pink {
+    border: none;
+    background-color: #DD377D;
+
+    & svg {
+      fill: white;
+      color: $basicWhiteColor;
+    }
+  }
+}
