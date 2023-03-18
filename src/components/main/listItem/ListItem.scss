@@ -32,12 +32,11 @@
     }
 
     p {
+      text-align: center;
       width: 347px;
       height: 58px;
       @include setFontStyles('Lato', normal, 300, 24px, 29px);
-      white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis;
     }
 
     .buttons {

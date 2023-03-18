@@ -8,6 +8,7 @@
   justify-content: center;
 
   .contentListBlock {
+    position: relative;
     width: 1281px;
     display: flex;
     flex-direction: column;
@@ -18,6 +19,8 @@
       justify-content: space-between;
 
       .buttons {
+        position: absolute;
+        right: 15px;
         display: flex;
         column-gap: 16px;
 
