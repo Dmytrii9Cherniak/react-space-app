@@ -3,8 +3,8 @@ import { CardModel } from '../../../models/CardModel';
 import '../listItem/ListItem.scss';
 import BuyButton from './buyButton/BuyButton';
 import { useLocation } from 'react-router-dom';
-import { useRecoilState } from "recoil";
-import {favouritesState} from "../../../atom/atom";
+import { useRecoilState } from 'recoil';
+import { favouritesState } from '../../../atom/atom';
 
 function ListItem({id, name, description, image}: CardModel) {
 
@@ -17,8 +17,12 @@ function ListItem({id, name, description, image}: CardModel) {
     };
 
     const removeFromFavourites = () => {
-        const updatedFavourites = favourites.filter((item) => item.id !== id);
-        setFavourites(updatedFavourites);
+        const index = favourites.findIndex(item => item.id === id);
+        if (index !== -1) {
+            const updatedFavourites = [...favourites];
+            updatedFavourites.splice(index, 1);
+            setFavourites(updatedFavourites);
+        }
     };
 
     return (<div key={id} className="cardItem">

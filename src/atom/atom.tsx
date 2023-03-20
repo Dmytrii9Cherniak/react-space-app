@@ -2,7 +2,7 @@ import { atom } from 'recoil';
 import firstImage from '../media/firstCartImage.png';
 import secondImage from '../media/secondImagePhoto.png'
 import thirdImage from '../media/thirdImagePhoto.png'
-import {CardModel} from "../models/CardModel";
+import { CardModel } from '../models/CardModel';
 
 export const imagesState = atom({
     key: 'arrayImages',

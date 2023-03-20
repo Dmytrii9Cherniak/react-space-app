@@ -2,9 +2,9 @@ import React from 'react';
 import '../favourites/Favourites.scss';
 import headerImage from '../../media/headerFavouritesImg.png'
 import HeaderNavigation from '../header/header_navigation/HeaderNavigation';
+import ListItem from '../main/listItem/ListItem';
 import { favouritesState } from '../../atom/atom';
 import {useRecoilState, useRecoilValue} from 'recoil';
-import ListItem from "../main/listItem/ListItem";
 
 function Favourites() {
 

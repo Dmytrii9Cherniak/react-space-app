@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { CardModel } from '../../../models/CardModel';
 import { useRecoilValue } from 'recoil';
-import Slider from "react-slick";
+import Slider from 'react-slick';
 import ListItem from '../listItem/ListItem';
 import { LAUNCHES_QUERY } from '../../../index';
 import { imagesState } from '../../../atom/atom'
