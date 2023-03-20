@@ -1,0 +1,28 @@
+@import 'src/index.scss';
+
+.headerBottomText {
+  position: absolute;
+  bottom: 33px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  main {
+    display: flex;
+    column-gap: 19px;
+
+    h3 {
+      @include setFontStyles('Lato', normal, 400, 32px, 38px);
+      color: $basicWhiteColor;
+    }
+
+    div svg {
+      border: 1.2px none #FFFFFF;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+}

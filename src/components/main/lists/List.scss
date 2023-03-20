@@ -1,0 +1,52 @@
+@import 'src/index.scss';
+
+
+.fullListBlock {
+  margin-top: 99px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .contentListBlock {
+    position: relative;
+    width: 1281px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    .headerAndButtons {
+      display: flex;
+      justify-content: space-between;
+
+      .buttons {
+        position: absolute;
+        right: 15px;
+        display: flex;
+        column-gap: 16px;
+
+        button {
+          width: 44px;
+          height: 44px;
+          border: none;
+          background: #ECECEC;
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+          cursor: pointer;
+        }
+      }
+
+      h3 {
+        width: 465px;
+        height: 38px;
+        @include setFontStyles('Syne', normal, 800, 32px, 38px);
+        text-transform: uppercase;
+        color: $basicBlackColor;
+      }
+    }
+
+    .items {
+      display: flex;
+      column-gap: 12px;
+    }
+
+  }
+}

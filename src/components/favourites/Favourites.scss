@@ -1,0 +1,66 @@
+@import 'src/index.scss';
+
+.mainFavouritesBlock {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  .headerImageBlock {
+    width: 100%;
+    max-width: 100%;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .favouritesContent {
+      position: absolute;
+      top: 220px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      h4 {
+        width: 513px;
+        height: 58px;
+        @include setFontStyles('Syne', normal, 800, 48px, 58px);
+        text-align: center;
+        text-transform: uppercase;
+        color: $basicWhiteColor;
+      }
+    }
+
+    .footerBlockItems {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 24px;
+
+      .footerItemList {
+        margin-top: 64px;
+        position: relative;
+        width: 1281px;
+        min-height: 641px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 24px;
+
+        .clearAllHeader {
+          width: 100%;
+          text-align: end;
+          @include setFontStyles('Lato', normal, 300, 24px, 29px);
+          color: #556B84;
+          margin-bottom: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+
+  }
+
+}

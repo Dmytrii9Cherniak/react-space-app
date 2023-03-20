@@ -1,0 +1,12 @@
+@import 'src/index.scss';
+
+.buyButton {
+  border: none;
+  width: 278px;
+  height: 53px;
+  background: #D3EAFF;
+  @include setFontStyles('Syne', normal, 600, 24px, 29px);
+  color: $basicBlackColor;
+  text-transform: uppercase;
+  cursor: pointer;
+}

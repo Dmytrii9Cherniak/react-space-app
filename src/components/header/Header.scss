@@ -1,0 +1,15 @@
+.mainHeaderBlock {
+  .headerImageBlock {
+    position: relative;
+    width: 100%;
+    max-height: 740px;
+    height: auto;
+    display: flex;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
