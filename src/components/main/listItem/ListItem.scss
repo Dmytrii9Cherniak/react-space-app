@@ -44,6 +44,40 @@
       width: 100%;
       display: flex;
       column-gap: 16px;
+
+      .favouritesButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 53px;
+        height: 53px;
+        border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        .pink {
+          border: none;
+          background-color: #DD377D;
+
+          & svg {
+            fill: white;
+            color: $basicWhiteColor;
+          }
+        }
+      }
+
+      .deleteButton {
+        width: 53px;
+        height: 53px;
+        background: #ECECEC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+      }
+
     }
 
   }
